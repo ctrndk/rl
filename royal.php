@@ -5,12 +5,14 @@
 echo "Masukkan UserID : ";
 $uid 	    = trim(fgets(STDIN));
 if(empty($uid)){
-    $uid = '3069618603';
+    $uid = '4138052855';
 }
 echo "Masukkan Token : ";
 $track 	    = trim(fgets(STDIN));
 if(empty($track)){
-    $track = '646f737c2363688a1e2b9c0a4160eca68e75d9db544d617e39fffa5da7f0c76b';
+
+
+$track='c5e0c3c9b460029b774b25f6d4376df1d5e3522545f087ebed29f54b7dfdeefb';
 }
 //
 function request($url,$headers,$post = 0){
