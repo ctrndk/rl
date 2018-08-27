@@ -10,8 +10,6 @@ if(empty($uid)){
 echo "Masukkan Token : ";
 $track 	    = trim(fgets(STDIN));
 if(empty($track)){
-
-
 $track='c5e0c3c9b460029b774b25f6d4376df1d5e3522545f087ebed29f54b7dfdeefb';
 }
 //
@@ -37,8 +35,8 @@ function request($url,$headers,$post = 0){
 $url        =   "http://instalike.socialmarkets.info/user/$uid/trackAction/$track";
 $urltoken   =   "http://instalike.socialmarkets.info/user/$uid/getBoard/0/$track";
 $headers    =   array();
-$headers[]  =   'systemVersion: royallikesandroid/  (Redmi 3S/23/6.0.1)';
-$headers[]  =   'User-Agent: royallikes 7 (Redmi 3S/23/6.0.1)';
+$headers[]  =   'systemVersion: royallikesandroid/  (Redmi 4X/25/7.1.2)';
+$headers[]  =   'User-Agent: royallikes 7 (Redmi 4X/25/7.1.2)';
 $headers[]  =   'Content-Type: application/json; charset=utf-8';
 function orderid($urltoken,$headers){
     $page   =   json_decode(request($urltoken,$headers));
